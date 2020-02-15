@@ -62,6 +62,10 @@ def main():
     nsize     = int(9)
     num_nodes = int(50)
     
+    # Correct node size
+    if (nsize%2) == 0:
+        nsize = nsize + 1
+    
     # Create figure
     fig = create_newimage(width,height,nsize,num_nodes)
     plt.figure(0)
